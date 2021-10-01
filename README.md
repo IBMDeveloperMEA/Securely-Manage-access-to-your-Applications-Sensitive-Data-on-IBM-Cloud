@@ -78,10 +78,24 @@ You can also use this link to [Download the sample app.](https://github.com/ibm-
 
 ## Step 7: Creating Scopes and Roles
 
-7.1. Now that App ID is configured, scopes are created and we have the users that we need, let's walk through creating roles. Create your roles by going to **Roles and profiles > Roles > Create** role. I created the roles Caller and Technician. I added only the elevator.call scope to the Caller role. 
+7.1. Now that App ID is configured, scopes are created and we have the users that we need, let's walk through creating roles. Create your roles by going to **Roles and profiles > Roles > Create** role. 
 
-![image](https://user-images.githubusercontent.com/1867657/135224994-c6d38d8b-877a-4414-a69f-6d913603e0d1.png)
 
+<img width="666" alt="zz" src="https://user-images.githubusercontent.com/16270682/135629710-f4d18c43-384a-4498-af11-1ce51af0e928.PNG">
+
+
+For our workshop we will create roles **Caller** and **Technician**. 
+
+
+#### Create role "Caller"
+
+7.2 - Give name caller and add scope "Elevator/elevator.call"
+
+<img width="593" alt="zzz" src="https://user-images.githubusercontent.com/16270682/135629876-8ed7d82e-3428-4ed6-ad13-32bc6b7ed1ee.PNG">
+
+#### Create role "Technician"
+
+7.2 - Give name caller and add scope "Elevator/elevator.call"
 
 ![image](https://user-images.githubusercontent.com/1867657/135225011-c9dd4643-981a-41a4-a10d-2ba4afd341b5.png)
 
