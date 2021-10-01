@@ -116,6 +116,7 @@ Give name Technician and add scopes "Elevator/elevator.call", "Elevator/elevator
 
 Note: I used the credentials of my elevator application in the configuration of my sample applications in localdev-config.json. To grab your credentials, open your application in the Applications page of the App ID dashboard.
 
+<img width="903" alt="Capture" src="https://user-images.githubusercontent.com/16270682/135635929-04d09bfc-bd1d-489b-9b46-a70ce4e9102c.PNG">
 
 
 ## Step 10: Configuring Your App's Endpoints
