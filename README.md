@@ -50,38 +50,38 @@ You can also use this link to [Download the sample app.](https://github.com/ibm-
 
 ## Step 4: Add Localhost URL in App ID
 
-Add localhost:3000/* to your list of allowed redirect URIs. You can edit your allowed redirect URIs by going to Manage Authentication > Authentication Settings, http://localhost:3000/
+4.1 - Add localhost:3000/* to your list of allowed redirect URIs. You can edit your allowed redirect URIs by going to Manage Authentication > Authentication Settings, http://localhost:3000/
 
 <img width="654" alt="4" src="https://user-images.githubusercontent.com/16270682/134594819-ac4ae6e7-7cc7-4b71-b171-f7455ba93a1f.PNG">
 
-## Step 5: Add Users in Cloud Directory
 
-Go to Cloud Directory > Users, Click on create users 
+## Step 5:  Add the App ID service configuration to the app and create scope
 
-<img width="919" alt="x" src="https://user-images.githubusercontent.com/16270682/135621497-f406bdc1-ecf4-4b5a-978d-b19496e9cf55.PNG">
-
-Add your user details and click save 
-
-<img width="584" alt="y" src="https://user-images.githubusercontent.com/16270682/135621529-9006e3cf-90f9-461c-a501-a3e18ae2ca66.PNG">
-
-## Step 6:  Add the App ID service configuration to the app
-
-6.1 - From App ID Dashboard, select Applications in the left pane, click on add a new application. 
+5.1 - From App ID Dashboard, select Applications in the left pane, click on add a new application. 
 
 <img width="927" alt="c" src="https://user-images.githubusercontent.com/16270682/134955233-3e8f249a-c77a-4482-bb65-b08985b97609.PNG">
 
-6.2 - Give your application a unique name and define the scopes elevator.call, elevator.stop, and elevator.service to represent the specific operations that the different roles can perform. click on save.
+5.2 - Give your application a unique name and define the scopes elevator.call, elevator.stop, and elevator.service to represent the specific operations that the different roles can perform. click on save.
 
 <img width="593" alt="z" src="https://user-images.githubusercontent.com/16270682/135624030-f6279303-3662-4d0c-a35b-e62778a7018a.PNG">
+
+## Step 6: Add Users in Cloud Directory
+
+6.1 - Go to Cloud Directory > Users, Click on create users 
+
+<img width="919" alt="x" src="https://user-images.githubusercontent.com/16270682/135621497-f406bdc1-ecf4-4b5a-978d-b19496e9cf55.PNG">
+
+6.2 - Add your user details and click save 
+
+<img width="584" alt="y" src="https://user-images.githubusercontent.com/16270682/135621529-9006e3cf-90f9-461c-a501-a3e18ae2ca66.PNG">
 
 
 ## Step 7: Creating Scopes and Roles
 
-3.1. Now that App ID is configured and I have the users that we need, let's walk through creating scopes and roles.
+7.1. Now that App ID is configured, scopes are created and we have the users that we need, let's walk through creating roles. Create your roles by going to **Roles and profiles > Roles > Create** role. I created the roles Caller and Technician. I added only the elevator.call scope to the Caller role. 
 
 ![image](https://user-images.githubusercontent.com/1867657/135224994-c6d38d8b-877a-4414-a69f-6d913603e0d1.png)
 
-3.2. Create your roles by going to **Roles and profiles > Roles > Create** role. I created the roles Caller and Technician. I added only the elevator.call scope to the Caller role. 
 
 ![image](https://user-images.githubusercontent.com/1867657/135225011-c9dd4643-981a-41a4-a10d-2ba4afd341b5.png)
 
