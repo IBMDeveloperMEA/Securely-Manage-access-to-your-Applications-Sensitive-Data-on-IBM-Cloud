@@ -76,9 +76,9 @@ You can also use this link to [Download the sample app.](https://github.com/ibm-
 <img width="584" alt="y" src="https://user-images.githubusercontent.com/16270682/135621529-9006e3cf-90f9-461c-a501-a3e18ae2ca66.PNG">
 
 
-## Step 7: Creating Scopes and Roles
+## Step 7: Creating Roles
 
-7.1. Now that App ID is configured, scopes are created and we have the users that we need, let's walk through creating roles. Create your roles by going to **Roles and profiles > Roles > Create** role. 
+7.1. Now that App ID is configured, scopes are created and we have the users that we need, let's walk through creating roles. Create your roles by going to **Roles and profiles > Roles > Create role**. 
 
 
 <img width="666" alt="zz" src="https://user-images.githubusercontent.com/16270682/135629710-f4d18c43-384a-4498-af11-1ce51af0e928.PNG">
@@ -87,31 +87,42 @@ You can also use this link to [Download the sample app.](https://github.com/ibm-
 For our workshop we will create roles **Caller** and **Technician**. 
 
 
-#### Create role "Caller"
+#### 7.2 - Create role "Caller"
 
-7.2 - Give name caller and add scope "Elevator/elevator.call"
+Give name caller and add scope "Elevator/elevator.call"
 
 <img width="593" alt="zzz" src="https://user-images.githubusercontent.com/16270682/135629876-8ed7d82e-3428-4ed6-ad13-32bc6b7ed1ee.PNG">
 
-#### Create role "Technician"
+#### 7.3 - Create role "Technician"
 
-7.2 - Give name caller and add scope "Elevator/elevator.call"
+Give name Technician and add scopes "Elevator/elevator.call", "Elevator/elevator.stop", "Elevator/elevator.service"
 
-![image](https://user-images.githubusercontent.com/1867657/135225011-c9dd4643-981a-41a4-a10d-2ba4afd341b5.png)
 
-While for the Technician role, I gave the ability to complete more operations by adding the scopes elevator.call, elevator.stop, and elevator.service: 
+<img width="574" alt="11111" src="https://user-images.githubusercontent.com/16270682/135632497-cab9f0b1-7c85-4766-89d7-4e1a7fa798ee.PNG">
 
-3.3. Assign the roles to specific application users by going to **Roles and profiles > User profiles.** Then, choose the user that you want to assign the role to and click the **More options menu > Assign role.** I assigned the Technician role to Ted and the Caller role to Peter. In the following image, you can see what it looks like when I assign the Technician role to Ted: 
 
-![image](https://user-images.githubusercontent.com/1867657/135225122-a1661f7d-896d-45e6-a296-7f817980c799.png)
+
+## Step 8: Assigning Roles to Users
+
+8.1 -  Assign the roles to specific application users by going to **Roles and profiles > User profiles.** Then, choose the user that you want to assign the role to and select from available roles to assign
+
+<img width="911" alt="aaaaaaaaaaaaaaaaaaaaaa" src="https://user-images.githubusercontent.com/16270682/135633466-81d02344-9caa-4b56-b07d-38157e032885.PNG">
+
+
+![image](https://user-images.githubusercontent.com/16270682/135633214-9ad53a1a-eb09-4b22-9015-055c3a27bb6b.png)
+
+
+## Step 9: Configure application
 
 Note: I used the credentials of my elevator application in the configuration of my sample applications in localdev-config.json. To grab your credentials, open your application in the Applications page of the App ID dashboard.
 
-## Step 4: Configuring Your App's Endpoints
+
+
+## Step 10: Configuring Your App's Endpoints
 
 After creating the roles and assigning them to users, I want my application to verify the users' scopes when performing certain operations. To do this, I will define some endpoints on my application that will either use App ID's WebApp Strategy or send a request to backend endpoints that I will also define, which will perform the validation by using App ID's API Strategy. 
 
-## Step 5 WebAppStrategy (Web app endpoints)
+### WebAppStrategy (Web app endpoints)
 
 Using the elevator app as an example, you can see how I secure the following endpoint by using the hasScope method in WebAppStrategy to check whether the access token contains the elevator.service and elevator.stop scopes:
 
@@ -178,7 +189,7 @@ app.get("/protected/stopElevator", async function(req, res) {
 
 ```
 
-## Step 6: APIStrategy (Backend endpoints)
+### APIStrategy (Backend endpoints)
 
 These endpoints on the backend server use APIStrategy to validate that the access token contains the elevator.call, elevator.service, and elevator.stop scopes respectively:
 
