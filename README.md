@@ -38,16 +38,34 @@ And if you are not, don't worry! We have got you covered! There are 3 steps to c
 
 2.2- Click create botton to start your App ID instance
 
-2.3 - Download the sample app From workshop's [Git Repository](https://github.com/IBMDeveloperMEA/Securely-Manage-access-to-your-Applications-Sensitive-Data-on-IBM-Cloud) click on code and download zip file. Unzip the file to a path of your choice. 
+
+## Step 3: Download Sample Application
+
+3.1 - Download the sample app From workshop's [Git Repository](https://github.com/IBMDeveloperMEA/Securely-Manage-access-to-your-Applications-Sensitive-Data-on-IBM-Cloud) click on code and download zip file. Unzip the file to a path of your choice. 
 
 <img width="710" alt="11" src="https://user-images.githubusercontent.com/16270682/135452891-d5da1baa-f8bc-4b13-aa6f-19b0148121f8.PNG">
 
 
 You can also use this link to [Download the sample app.](https://github.com/ibm-cloud-security/appid-sample-code-snippets/tree/master/access-control-demo-apps)
 
-Add localhost:3000/* to your list of allowed redirect URIs. You can edit your allowed redirect URIs on the **Manage authentication > Authentication settings** page of the App ID dashboard.
+## Step 4: Add Localhost URL in App ID
 
-## Step 3: Creating Scopes and Roles
+Add localhost:3000/* to your list of allowed redirect URIs. You can edit your allowed redirect URIs by going to Manage Authentication > Authentication Settings, http://localhost:3000/
+
+<img width="654" alt="4" src="https://user-images.githubusercontent.com/16270682/134594819-ac4ae6e7-7cc7-4b71-b171-f7455ba93a1f.PNG">
+
+## Step 5: Add Users in Cloud Directory
+
+Go to Cloud Directory > Users, Click on create users 
+
+<img width="919" alt="x" src="https://user-images.githubusercontent.com/16270682/135621497-f406bdc1-ecf4-4b5a-978d-b19496e9cf55.PNG">
+
+Add your user details and click save 
+
+<img width="584" alt="y" src="https://user-images.githubusercontent.com/16270682/135621529-9006e3cf-90f9-461c-a501-a3e18ae2ca66.PNG">
+
+
+## Step 6: Creating Scopes and Roles
 
 3.1. Now that App ID is configured and I have the users that we need, let's walk through creating scopes and roles.
 Register your application with App ID by going to **Applications > Add Application.** I created an application called Elevators and I defined the scopes elevator.call, elevator.stop, and elevator.service to represent the specific operations that the different roles can perform:
