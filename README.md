@@ -226,6 +226,17 @@ app.get("/protected/stopElevator",
 
 ```
 
+## Step 11: Build and Run your Application
+
+You need to build and run both "Elevators-backend" and "Elevators-app" for your app to run successfully. 
+
+
+   npm install
+   npm start
+   
+
+![image](https://user-images.githubusercontent.com/16270682/135641403-dd97a0cc-6f5f-4bf4-9ddd-2c41636d54c6.png)
+
 
 ## Conclusion:
 
