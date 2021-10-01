@@ -64,11 +64,20 @@ Add your user details and click save
 
 <img width="584" alt="y" src="https://user-images.githubusercontent.com/16270682/135621529-9006e3cf-90f9-461c-a501-a3e18ae2ca66.PNG">
 
+## Step 6:  Add the App ID service configuration to the app
 
-## Step 6: Creating Scopes and Roles
+6.1 - From App ID Dashboard, select Applications in the left pane, click on add a new application. 
+
+<img width="927" alt="c" src="https://user-images.githubusercontent.com/16270682/134955233-3e8f249a-c77a-4482-bb65-b08985b97609.PNG">
+
+6.2 - Give your application a unique name and define the scopes elevator.call, elevator.stop, and elevator.service to represent the specific operations that the different roles can perform. click on save.
+
+<img width="593" alt="z" src="https://user-images.githubusercontent.com/16270682/135624030-f6279303-3662-4d0c-a35b-e62778a7018a.PNG">
+
+
+## Step 7: Creating Scopes and Roles
 
 3.1. Now that App ID is configured and I have the users that we need, let's walk through creating scopes and roles.
-Register your application with App ID by going to **Applications > Add Application.** I created an application called Elevators and I defined the scopes elevator.call, elevator.stop, and elevator.service to represent the specific operations that the different roles can perform:
 
 ![image](https://user-images.githubusercontent.com/1867657/135224994-c6d38d8b-877a-4414-a69f-6d913603e0d1.png)
 
